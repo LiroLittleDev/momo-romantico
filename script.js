@@ -1,5 +1,5 @@
 
-const startDate = new Date('2023-12-02T14:00:00'); // Exemplo: 15 de junho de 2023
+const startDate = new Date('2023-12-02T15:00:00'); // Data do evento
 const timerDisplay = document.getElementById('timeDisplay');
 
 function updateTimer() {
@@ -19,7 +19,7 @@ function updateTimer() {
 setInterval(updateTimer, 1000);
 updateTimer();
 
-// Ajuste para parallax em dispositivos móveis (desativa se necessário)
+// Ajuste para parallax em dispositivos móveis
 if (window.innerWidth <= 768) {
     document.querySelectorAll('.parallax').forEach(el => {
         el.style.backgroundAttachment = 'scroll';
